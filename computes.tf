@@ -4,7 +4,7 @@ module "aws_compute_xandar_dga" {
   source  = "upmaru/instellar/aws"
   version = "0.8.5"
 
-  balancer                     = false
+  balancer                     = true
   balancer_deletion_protection = false
   balancer_ssh                 = true
   bastion_size                 = "t3a.micro"
