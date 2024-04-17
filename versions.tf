@@ -8,6 +8,10 @@ terraform {
       version = "~> 5.0"
     }
 
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 4.0"
+    }
 
     instellar = {
       source  = "upmaru/instellar"
