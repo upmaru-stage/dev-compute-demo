@@ -1,4 +1,5 @@
 variable "cloudflare_api_token" {}
+variable "cloudflare_account_id" {}
 
 provider "cloudflare" {
   api_token = var.cloudflare_api_token
