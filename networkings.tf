@@ -2,10 +2,8 @@
 
 variable "identifier" {}
 module "aws_networking_xandar_uzk" {
-  # source  = "upmaru/instellar/aws//modules/network"
-  source = "github.com/upmaru/terraform-aws-instellar//modules/network?ref=develop"
-
-  # version = "0.8.5"
+  source  = "upmaru/instellar/aws//modules/network"
+  version = "0.9.1"
 
   blueprint           = var.identifier
   identifier          = var.identifier
