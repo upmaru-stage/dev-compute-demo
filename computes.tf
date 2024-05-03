@@ -4,7 +4,7 @@ module "aws_compute_xandar_dga" {
   source = "github.com/upmaru/terraform-aws-instellar?ref=develop"
   # version = "0.9.2"
 
-  balancer                     = true
+  balancer                     = false
   balancer_deletion_protection = false
   balancer_ssh                 = true
   bastion_size                 = "t3a.micro"
