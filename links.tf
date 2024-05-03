@@ -2,7 +2,7 @@
 
 module "instellar_link_xandar_gvm" {
   source  = "upmaru/bootstrap/instellar//modules/service"
-  version = "0.8.0"
+  version = "0.8.1"
 
   certificate = module.aws_database_xandar_xrx.certificate_url
   channels    = ["main", "master"]
@@ -26,8 +26,8 @@ module "instellar_link_xandar_gvm" {
 }
 
 module "instellar_link_xandar_hge" {
-  source = "github.com/upmaru/terraform-instellar-bootstrap?ref=develop"
-  # version = "0.8.0"
+  source = "upmaru/bootstrap/instellar"
+  version = "0.8.1"
 
   balancer              = module.aws_compute_xandar_dga.balancer
   bootstrap_node        = module.aws_compute_xandar_dga.bootstrap_node
