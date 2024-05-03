@@ -15,7 +15,7 @@ module "aws_compute_xandar_dga" {
     { id = 2, name = "02", size = "t3a.medium" },
   ]
 
-  global_accelerator   = true
+  global_accelerator   = false
   identifier           = "xandar-dga"
   network_dependencies = module.aws_networking_xandar_uzk.dependencies
   node_detail_revision = 2
