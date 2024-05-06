@@ -6,7 +6,8 @@ provider "cloudflare" {
 }
 
 module "cloudflare_tunnel_xandar_dga" {
-  source = "github.com/upmaru/terraform-cloudflare-instellar?ref=develop"
+  source  = "upmaru/instellar/cloudflare"
+  version = "0.1.1"
 
   bastion_access = module.aws_compute_xandar_dga.bastion_access
   blueprint      = var.identifier
