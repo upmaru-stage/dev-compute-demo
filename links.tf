@@ -26,7 +26,7 @@ module "instellar_link_xandar_gvm" {
 }
 
 module "instellar_link_xandar_hge" {
-  source = "upmaru/bootstrap/instellar"
+  source  = "upmaru/bootstrap/instellar"
   version = "0.8.1"
 
   balancer              = module.aws_compute_xandar_dga.balancer
