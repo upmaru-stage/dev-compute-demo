@@ -4,7 +4,7 @@ module "aws_compute_xandar_dga" {
   source  = "upmaru/instellar/aws"
   version = "0.9.3"
 
-  balancer                     = false
+  balancer                     = true
   balancer_deletion_protection = false
   balancer_ssh                 = true
   bastion_size                 = "t3a.micro"
@@ -23,7 +23,7 @@ module "aws_compute_xandar_dga" {
   public_subnet_ids    = module.aws_networking_xandar_uzk.public_subnet_ids
   publicly_accessible  = true
   region               = var.aws_region
-  ssh_keys             = ["zack-studio", "zack-mbp"]
+  ssh_keys             = ["zack-studio"]
   ssm                  = false
   storage_size         = 40
   volume_type          = "gp3"
