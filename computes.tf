@@ -23,7 +23,7 @@ module "aws_compute_xandar_dga" {
   public_subnet_ids    = module.aws_networking_xandar_uzk.public_subnet_ids
   publicly_accessible  = true
   region               = var.aws_region
-  ssh_keys             = ["zack-studio", "zack-mbp"]
+  ssh_keys             = ["zack-studio"]
   ssm                  = false
   storage_size         = 40
   volume_type          = "gp3"
