@@ -24,7 +24,7 @@ module "instellar_link_xandar_gvm" {
   certificate = module.aws_database_xandar_xrx.certificate_url
   channels    = ["main", "master"]
   cluster_ids = [
-
+    module.instellar_link_xandar_hge.cluster_id
   ]
   credential = {
     host     = module.aws_database_xandar_xrx.address
