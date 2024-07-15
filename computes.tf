@@ -11,8 +11,6 @@ module "aws_compute_xandar_dga" {
   bastion_ssh                  = true
   blueprint                    = var.identifier
   cluster_topology = [
-    { id = 1, name = "01", size = "t3a.medium" },
-    { id = 2, name = "02", size = "t3a.medium" },
   ]
 
   global_accelerator   = false
