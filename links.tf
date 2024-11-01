@@ -9,7 +9,7 @@ module "instellar_link_xandar_hge" {
   cluster_address       = module.aws_compute_xandar_dga.cluster_address
   cluster_name          = module.aws_compute_xandar_dga.identifier
   insterra_component_id = 398
-  kit_slug              = "lite"
+  kit_slug              = "pro"
   nodes                 = module.aws_compute_xandar_dga.nodes
   password_token        = module.aws_compute_xandar_dga.trust_token
   provider_name         = "aws"
