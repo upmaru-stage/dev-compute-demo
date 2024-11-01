@@ -3,7 +3,7 @@
 variable "identifier" {}
 module "aws_networking_xandar_uzk" {
   source  = "upmaru/instellar/aws//modules/network"
-  version = "0.9.3"
+  version = "0.9.5"
 
   blueprint           = var.identifier
   identifier          = var.identifier

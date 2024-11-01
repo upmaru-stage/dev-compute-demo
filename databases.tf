@@ -2,7 +2,7 @@
 
 module "aws_database_xandar_xrx" {
   source  = "upmaru/instellar/aws//modules/database"
-  version = "0.9.3"
+  version = "0.9.5"
 
   blueprint                     = var.identifier
   db_name                       = "instellardb"

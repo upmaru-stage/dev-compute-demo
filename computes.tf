@@ -2,7 +2,7 @@
 
 module "aws_compute_xandar_dga" {
   source  = "upmaru/instellar/aws"
-  version = "0.9.3"
+  version = "0.9.5"
 
   balancer                     = false
   balancer_deletion_protection = false
@@ -11,6 +11,8 @@ module "aws_compute_xandar_dga" {
   bastion_ssh                  = true
   blueprint                    = var.identifier
   cluster_topology = [
+    { id = 1, name = "01", size = "t3a.medium" },
+    { id = 2, name = "02", size = "t3a.medium" },
   ]
 
   global_accelerator   = false

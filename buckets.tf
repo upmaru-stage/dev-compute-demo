@@ -2,7 +2,7 @@
 
 module "aws_bucket_blackeye_uea" {
   source  = "upmaru/instellar/aws//modules/bucket"
-  version = "0.9.3"
+  version = "0.9.5"
 
   blueprint  = var.identifier
   identifier = "blackeye-uea"
